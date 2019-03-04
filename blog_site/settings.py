@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'users.apps.UsersConfig',
     'blog.apps.BlogConfig',
+    # add crispy forms app
     'crispy_forms',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -123,3 +124,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 # use bootstrap4 for our templates with crispy download via ( pip install django-crispy-forms )
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+# tells django where to go by default after logging in
+LOGIN_REDIRECT_URL = 'blog:home'
+# tells django where is the login url (cuz we don't want to use the default one which is 'localhost/accounts/login/')
+LOGIN_URL = 'login'
