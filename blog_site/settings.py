@@ -122,6 +122,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+# the base file to upload media into ( ourProjectLocationOnTheSystem/media ) for profile it would be /media/profile_pics
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
 # use bootstrap4 for our templates with crispy download via ( pip install django-crispy-forms )
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 # tells django where to go by default after logging in
