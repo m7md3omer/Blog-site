@@ -22,7 +22,7 @@ class UserPostListView(ListView):
     template_name = 'blog/user_posts.html'  # the default is blog/post_list.html
     context_object_name = 'posts'
     ordering = ['-date_posted']
-    paginate_by = 5
+    paginate_by = 5  # page_obj variable is sent to the template automatically as the current page instance
 
     def get_queryset(self):
         user = get_object_or_404(User, username=self.kwargs.get('username'))
