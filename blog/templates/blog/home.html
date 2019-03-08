@@ -9,7 +9,7 @@
                 <!-- display the date in the form (Month Day, Year) like ( March 04, 2019 )  -->
               <small class="text-muted">{{ post.date_posted|date:'F d, Y' }}</small>
             </div>
-            <h2><a class="article-title" href="#">{{ post.title }}</a></h2>
+            <h2><a class="article-title" href="{% url 'blog:detail' post.id %}">{{ post.title }}</a></h2>
             <p class="article-content">{{ post.content }}</p>
           </div>
         </article>
