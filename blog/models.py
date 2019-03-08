@@ -13,7 +13,7 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
-    # this method is used to redirect the user to the created Post after creating it
+    # this method is used to redirect the user to the created Post after creating or updating  it
     # django by default searches for this method after creating a post
     def get_absolute_url(self):
         return reverse('blog:detail', kwargs={'pk': self.pk})
