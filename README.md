@@ -1,5 +1,5 @@
 # Blog-site
-Basic Django blog site with CRUD, authentication functionalities and access control functionalities
+Basic Django blog site with CRUD, authentication and access control functionalities
 
 ![Screenshot (9)](https://user-images.githubusercontent.com/39973541/55844019-aa4ecd80-5b3b-11e9-9357-8cae5e1bfbe9.png)
 
